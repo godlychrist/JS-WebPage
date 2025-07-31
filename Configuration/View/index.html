@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration</title>
+    <link href="../Styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="main">
+
+        <div class="img-container">
+            <img src="../Images/logo.png" alt="Logo" class="imglogo">
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-left">
+                <li><a href="../../MainView/View/empty.html" class="home">Home</a></li>
+                <li><a href="../../MyRides/View/index.html">Rides</a></li>
+                <li><a href="../../Bookings/View/index.html">Bookings</a></li>
+            </ul>
+            <div class="nav-right">
+                <input type="text" placeholder="Search...">
+                <div class="img-hover">
+                    <img src="../Images/user.png" alt="user" class="icono-usuario">
+                    <div class="test">
+                        <table>
+                            <tr>
+                                <th><a href="../../index.html">Logout</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="../../EditProfile/View/index.html">Profile</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="../../Configuration/View/index.html">Settings</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <h1 class="main-title"> Configuration </h1>
+        <div class="border-bottom"></div>
+
+        <form class="form">
+            <div class="name-container">
+                <label for="name" class="name"> Public Name </label>
+                <input type="text" class="name" placeholder="Bladimir" id="name">
+            </div>
+            <div class="bio-container">
+                <label for="bio" class="lbl"> Public Bio </label>
+                <textarea rows="8" id="bio"></textarea>
+            </div>
+
+            <div class="links">
+                <a href="#"> Cancel </a>
+                <a href="../../MainView/View/empty.html" class="sign-up"> Save </a>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-top"></div>
+        <div class="footer-content">
+            <a href="../../MainView/View/filled.html">Home</a> |
+            <a href="../../MyRides/View/index.html">Rides</a> |
+            <a href="../../Bookings/View/index.html">Bookings</a> |
+            <a href="../../Configuration/View/index.html">Settings</a> |
+            <a href="../../index.html">Login</a> |
+            <a href="../../SignIn/View/index.html">Register</a>
+        </div>
+        <div class="footer-bottom">
+            <span>© Aventones.com</span>
+        </div>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

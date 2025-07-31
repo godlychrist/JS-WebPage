@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditProfile</title>
+    <link href="../Styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="main">
+        <!-- NavBar -->
+        <div class="img-container">
+            <img src="../Images/logo.png" alt="Logo" class="imglogo">
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-left">
+                <li><a href="../../MainView/View/empty.html" class="home">Home</a></li>
+                <li><a href="../../MyRides/View/index.html">Rides</a></li>
+                <li><a href="../../Bookings/View/index.html">Bookings</a></li>
+            </ul>
+            <div class="nav-right">
+                <input type="text" placeholder="Search...">
+                <!-- Table Setting on Avatar -->
+                <div class="img-hover">
+                    <img src="../Images/user.png" alt="user" class="icono-usuario">
+                    <div class="test">
+                        <table>
+                            <tr>
+                                <th><a href="../../index.html">Logout</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="../../EditProfile/View/index.html">Profile</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="../../Configuration/View/index.html">Settings</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <p class="main-title"> Edit Profile </p>
+        <div class="border-bottom"></div>
+        <!-- Form for User Info -->
+        <form class="general-container">
+            <div class="labels-names">
+                <label for="first-name" class="lbl-first-name">First Name</label>
+                <label for="last-name" class="lbl-last-name">Last Name</label>
+            </div>
+
+            <div class="names-container">
+                <input type="text" id="first-name" class="first-name">
+                <input type="text" id="last-name" class="last-name">
+            </div>
+
+            <label for="email" class="lbl-email">Email</label>
+            <div class="email-container">
+                <input type="text" id="email" class="email">
+            </div>
+
+            <div class="labels-password">
+                <label for="first-password" class="lbl-first-password">Password</label>
+                <label for="second-password" class="lbl-second-password">Repeat Password</label>
+            </div>
+
+            <div class="passwords-container">
+                <input type="password" id="first-password" class="first-password">
+                <input type="password" id="second-password" class="second-password">
+            </div>
+
+            <label for="address" class="lbl-address">Address</label>
+            <div class="address-container">
+                <input type="text" id="address" class="address">
+            </div>
+
+            <div class="labels-country">
+                <label for="country" class="lbl-country">Country</label>
+                <label for="state" class="lbl-state">State</label>
+            </div>
+
+            <div class="country-info-container">
+                <select id="country" class="country"></select>
+                <input type="text" id="state" class="state">
+            </div>
+
+            <div class="labels-city">
+                <label for="city" class="lbl-city">City</label>
+                <label for="phone-number" class="lbl-phone">Phone Number</label>
+            </div>
+
+            <div class="city-personal-info">
+                <input type="text" id="city" class="city">
+                <input type="number" id="phone-number" class="phone-number">
+            </div>
+
+            <div class="links">
+                <a href="#">Cancel</a>
+                <a href="../../MainView/View/empty.html" class="sign-up">Save</a>
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footer-top"></div>
+        <div class="footer-content">
+            <a href="../../MainView/View/empty.html">Home</a> |
+            <a href="../../MyRides/View/index.html">Rides</a> |
+            <a href="../../Bookings/View/index.html">Bookings</a> |
+            <a href="../../Configuration/View/index.html">Settings</a> |
+            <a href="../../index.html">Login</a> |
+            <a href="../../SignIn/View/index.html">Register</a>
+        </div>
+        <div class="footer-bottom">
+            <span>© Aventones.com</span>
+        </div>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

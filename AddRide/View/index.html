@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../Styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="img-container">
+            <img src="../Images/logo.png" alt="Logo" class="imglogo">
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-left">
+                <li><a href="../../MainView/View/empty.html" class="home">Home</a></li>
+                <li><a href="../../MyRides/View/index.html" class="ride">Rides</a></li>
+                <li><a href="../../Bookings/View/index.html">Bookings</a></li>
+            </ul>
+            <div class="nav-right">
+                <input type="text" placeholder="Search...">
+                <div class="img-hover">
+                    <img src="../Images/user.png" alt="user" class="icono-usuario">
+                    <div class="test">
+                        <table>
+                            <tr>
+                                <th><a href="../../index.html">Logout</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="../../EditProfile/View/index.html">Profile</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="../../Configuration/View/index.html">Settings</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="title-container">
+            <h1 class="title"> New Ride</h1>
+            <div class="bottom-line"></div>
+        </div>
+
+        <form class="add-ride">
+            <div class="container-columns">
+                <div class="departure-arrival">
+                    <div class="input-group">
+                        <label for="departure" class="first-label">Departure from</label>
+                        <input type="text" id="departure" class="first-input">
+                    </div>
+                    <div class="input-group">
+                        <label for="arrival" class="first-label">Arrive To</label>
+                        <input type="text" id="arrival" class="second-input">
+                    </div>
+                </div>
+
+                <div class="days-checkbox">
+                    <div class="days-title">
+                        <p> Days </p>
+                    </div>
+                    <div class="checkboxs">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="mon" class="first-checkbox">
+                            <label for="mon">Mon</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="tue" class="second-checkbox">
+                            <label for="tue">Tue</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="wed" class="third-checkbox">
+                            <label for="wed">Wed</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="thu" class="fourth-checkbox">
+                            <label for="thu">Thu</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="fri" class="fifth-checkbox">
+                            <label for="fri">Fri</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sat" class="sixth-checkbox">
+                            <label for="sat">Sat</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sun" class="seventh-checkbox">
+                            <label for="sun">Sun</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="info-ride">
+                    <div class="info-ride-group">
+                        <label for="timeid">Time</label>
+                        <select class="time" id="timeid">
+                            <option value="0">10 : 00 am</option>
+                        </select>
+                    </div>
+
+                    <div class="info-ride-group">
+                        <label for="seatsid">Seats</label>
+                        <input type="number" min="1" max="10" step="1" value="1" class="seats" id="seatsid">
+                    </div>
+
+                    <div class="info-ride-group">
+                        <label for="feeid">Fee</label>
+                        <input type="number" min="1" max="100" step="1" value="1" class="fee" id="feeid">
+                    </div>
+                </div>
+
+                <p class="box-title"> Vehicle Details</p>
+                <div class="vehicle-details">
+                    <div class="details">
+                        <label for="brand">Time</label>
+                        <select class="select-brand" id="brand">
+                            <option value="0">Nissan</option>
+                        </select>
+                    </div>
+                    <div class="details">
+                        <label for="model">Model</label>
+                        <input type="text" class="model-input" id="model">
+                    </div>
+                    <div class="details">
+                        <label for="yearid">Year</label>
+                        <input type="number" min="1" max="2025" step="1" value="2020" class="year" id="yearid">
+                    </div>
+                </div>
+
+                <div class="links">
+                    <a href="../../MainView/View/empty.html"> Cancel </a>
+                    <div class="save-container">
+                        <a href="../../MainView/View/empty.html" class="save"> Save </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-top"></div>
+        <div class="footer-content">
+            <a href="../../MainView/View/empty.html">Home</a> |
+            <a href="../../MyRides/View/index.html">Rides</a> |
+            <a href="../../Bookings/View/index.html">Bookings</a> |
+            <a href="../../Configuration/View/index.html">Settings</a> |
+            <a href="../../index.html">Login</a> |
+            <a href="../../SignIn/View/index.html">Register</a>
+        </div>
+        <div class="footer-bottom">
+            <span>© Aventones.com</span>
+        </div>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

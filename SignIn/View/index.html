@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link href="../Styles/SignIn.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="../Images/logo.png" alt="logo" class="Aventones-logo">
+        </div>
+
+        <p class="main-title"> User Registration </p>
+        <!-- Decoration Line -->
+        <div class="border-bottom"></div>
+
+        <!-- User Info -->
+        <form class="general-container">
+            <div class="labels-names">
+                <label for="first-name" class="lbl-first-name"> First Name </label>
+                <label for="last-name" class="lbl-last-name" > Last Name </label>
+            </div>
+
+            <div class="names-container">
+                <input type="text" class="first-name" id="first-name">
+                <input type="text" class="last-name" id="last-name">
+            </div>
+
+            <label for="email" class="lbl-email"> Email </label>
+            <div class="email-container">
+                <input type="text" class="email" id="email">
+            </div>
+
+
+            <div class="labels-password">
+                <label for="first-password" class="lbl-first-password"> Password </label>
+                <label for="second-password" class="lbl-second-password"> Repeat Password </label>
+            </div>
+
+            <div class="passwords-container">
+                <input type="password" class="first-password" id="first-password">
+                <input type="password" class="second-password" id="second-password">
+            </div>
+
+            <label for="address" class="lbl-address"> Address </label>
+            <div class="address-container">
+                <input type="text" class="address" id="address">
+            </div>
+
+            <div class="labels-country">
+                <label for="country" class="lbl-countru"> Country </label>
+                <label for="state" class="lbl-state"> State </label>
+            </div>
+
+            <div class="country-info-container">
+                <select class="country" id="country"></select>
+                <input type="text" class="state" id="state">
+            </div>
+
+            <div class="labels-city">
+                <label for="city" class="lbl-city"> City </label>
+                <label for="phone-number" class="lbl-phone"> Phone Number </label>
+            </div>
+
+            <div class="city-personal-info">
+                <input type="text" class="city" id="city">
+                <input type="number" class="phone-number" id="phone-number">
+            </div>
+
+            <div class="links">
+                <p> Already an user? <a href="../../index.html"> Login Here </a></p>
+                <p> Register as driver? <a href="#"> Click Here </a></p>
+            </div>
+        </form>
+
+        <a href="../../index.html" class="sign-up"> Sign up </a>
+
+
+    </main>
+
+    <footer>
+        <!-- Footer Decorative Line -->
+        <div class="footer-top"></div>
+        <!-- Footer -->
+        <div class="footer-content">
+            <a href="../../MainView/View/empty.html">Home</a> |
+            <a href="../../MyRides/View/index.html">Rides</a> |
+            <a href="../../Bookings/View/index.html">Bookings</a> |
+            <a href="../../Configuration/View/index.html">Settings</a> |
+            <a href="../../index.html">Login</a> |
+            <a href="../../SignIn/View/index.html">Register</a>
+        </div>
+        <div class="footer-bottom">
+            <span>© Aventones.com</span>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
