@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignIn</title>
-    <link href="../Styles/SignIn.css" rel="stylesheet" />
-    <script src="../Js/register.js"></script>
+    <link href="../Styles/driver.css" rel="stylesheet" />
+    <script src="../Js/driver.js"></script>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             <img src="../Images/logo.png" alt="logo" class="Aventones-logo" />
         </div>
 
-        <p class="main-title">User Registration</p>
+        <p class="main-title">Driver Registration</p>
         <!-- Decoration Line -->
         <div class="border-bottom"></div>
 
@@ -74,6 +74,8 @@
                 </div>
             </div>
 
+
+
             <div class="flex-container">
                 <div class="input-group">
                     <label for="city" class="lbl-city">City </label>
@@ -85,14 +87,37 @@
                 </div>
             </div>
 
+            <div class="flex-container">
+                <div class="input-group">
+                    <label for="brand" class="lbl-brand">Marca</label>
+                    <input type="text" class="brand" id="brand" required />
+                </div>
+                <div class="input-group">
+                    <label for="model" class="lbl-model">Modelo</label>
+                    <input type="text" class="model" id="model" required />
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="input-group">
+                    <label for="year" class="lbl-year">Año</label>
+                    <input type="text" class="year" id="year" required />
+                </div>
+                <div class="input-group">
+                    <label for="placa" class="lbl-placa">Numero de Placa</label>
+                    <input type="text" class="placa" id="placa" required />
+                </div>
+            </div>
+
             <div class="individual-inputs">
                 <label for="born-date" class="lbl-date">Address</label>
                 <input type="date" class="born-date" id="born-date" required />
             </div>
 
+
             <div class="links">
                 <p>Already an user? <a href="../../index.html">Login Here</a></p>
-                <p>Register as driver? <a href="driver.html">Click Here</a></p>
+                <p>Register as driver? <a href="#">Click Here</a></p>
             </div>
             <button type="submit" class="sign-up">Sign up <a href="../../index.html"></a></button>
         </form>

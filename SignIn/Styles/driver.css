@@ -62,7 +62,11 @@ body {
 .second-password,
 .city,
 .state,
-.phone-code {
+.phone-code,
+.brand, 
+.model,
+.year,
+.placa {
     width: 280px;
     padding: 10px;
     margin-bottom: 10px;
@@ -76,7 +80,6 @@ body {
     margin-bottom: 10px;
     border: 1px solid #ccc;
 }
-
 
 .country {
     width: 300px;
