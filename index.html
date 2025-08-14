@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LogIn</title>
-    <link href="LogIn/styles.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <main class="main">
-      <!-- Blue Border -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LogIn</title>
+  <link href="LogIn/styles.css" rel="stylesheet" />
+  <script src="JS/Authentication/login.js"></script>
+</head>
+
+<body>
+  <main class="main">
+    <!-- Blue Border -->
+    <form id="form-container">
       <div class="border-container">
         <!-- Logo -->
         <div class="img-container">
@@ -20,8 +23,7 @@
         <div class="button-container">
           <a href="#" class="button-google">
             <img src="LogIn/googlelogo.png" alt="logo-google" class="google" />
-            <b>Sign in with Google </b></a
-          >
+            <b>Sign in with Google </b></a>
         </div>
 
         <p class="Or">Or</p>
@@ -31,38 +33,35 @@
           <input type="text" class="username" id="username" />
 
           <label for="password" class="lbl-password"> Password </label>
-          <input
-            type="password"
-            class="password"
-            placeholder="**********"
-            id="password"
-          />
+          <input type="password" class="password" placeholder="**********" id="password" />
         </div>
         <p class="register-link">
           Not a user? <a href="SignIn/View/index.html">Register Now</a>
         </p>
 
         <div class="login-button">
-          <a href="MainView/View/empty.html"> Login </a>
+          <button type="submit"> Login </button>
         </div>
       </div>
-    </main>
+    </form>
+  </main>
 
-    <footer class="footer">
-      <!-- Footer Decorative Line -->
-      <div class="footer-top"></div>
-      <!-- Footer -->
-      <div class="footer-content">
-        <a href="MainView/View/empty.html" class="footer__link">Home</a> |
-        <a href="MyRides/View/index.html" class="footer__link">Rides</a> |
-        <a href="Bookings/View/index.html" class="footer__link">Bookings</a> |
-        <a href="Configuration/View/index.html" class="footer__link">Settings</a> |
-        <a href="index.html" class="footer__link">Login</a> |
-        <a href="SignIn/View/index.html" class="footer__link">Register</a>
-      </div>
-      <div class="footer-bottom">
-        <span>© Aventones.com</span>
-      </div>
-    </footer>
-  </body>
+  <footer class="footer">
+    <!-- Footer Decorative Line -->
+    <div class="footer-top"></div>
+    <!-- Footer -->
+    <div class="footer-content">
+      <a href="MainView/View/empty.html" class="footer__link">Home</a> |
+      <a href="MyRides/View/index.html" class="footer__link">Rides</a> |
+      <a href="Bookings/View/index.html" class="footer__link">Bookings</a> |
+      <a href="Configuration/View/index.html" class="footer__link">Settings</a> |
+      <a href="index.html" class="footer__link">Login</a> |
+      <a href="SignIn/View/index.html" class="footer__link">Register</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© Aventones.com</span>
+    </div>
+  </footer>
+</body>
+
 </html>
