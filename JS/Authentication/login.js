@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "../../MainView/View/empty.html";
       }
       if (userFound.typeuser === "user") {
-        window.location.href = "../../MainView/View/empty.html";
+ 
+          window.location.href = "../../MainView/View/empty.html";
+  
       }
     } else {
       alert("Usuario o contraseña incorrectos.");
