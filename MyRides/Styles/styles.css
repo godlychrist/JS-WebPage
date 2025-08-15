@@ -127,16 +127,22 @@ a:hover {
 
 .table-container table {
     width: 80%;
+    border-collapse: collapse;
+    text-align: center;
 }
+
 
 .first-row {
     background-color: #ccc;
 }
 
-.table-container table, th, tr {
+.table-container th,
+.table-container td {
     border: 1px solid black;
-    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
 }
+
 
 .table-container table td,
 .table-container table tr {

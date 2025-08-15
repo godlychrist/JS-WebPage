@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=W, initial-scale=1.0">
     <title>Document</title>
     <link href="../Styles/styles.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -55,48 +56,22 @@
 
         <!-- Main Table -->
         <div class="table-container">
-            <table>
-
-                <tr class="first-row">
-                    <th> From </th>
-                    <th> To </th>
-                    <th> Seat </th>
-                    <th> Car </th>
-                    <th> Fee </th>
-                    <th> Action </th>
-
-                </tr>
-                <tr>
-                    <th> Quesada </th>
-                    <th> Alajuela </th>
-                    <th> 2 </th>
-                    <th> Nissan Pathfinder 2015 </th>
-                    <th> $5 </th>
-                    <th><a href="../../EditRide/View/index.html">Edit</a> | <a href="deleted.html">Delete</a></th>
-
-                </tr>
-                <tr>
-                    <th> Quesada </th>
-                    <th> Naranjo </th>
-                    <th> 1 </th>
-                    <th> Toyota Corolla 2020 </th>
-                    <th> $10 </th>
-                    <th><a href="../../EditRide/View/index.html">Edit</a> | <a href="deleted.html">Delete</a></th>
-
-                </tr>
-
-                <tr>
-                    <th> Aguas Zarcas </th>
-                    <th> Naranjo </th>
-                    <th> 1 </th>
-                    <th> Ford Festiva 1990 </th>
-                    <th> - </th>
-                    <th><a href="../../EditRide/View/index.html">Edit</a> | <a href="deleted.html">Delete</a></th>
-
-                </tr>
-
-
+            <table id="rides-table">
+                <thead>
+                    <tr class="first-row">
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Seat</th>
+                        <th>Car</th>
+                        <th>Fee</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las filas se insertan aquí desde renderRides.js -->
+                </tbody>
             </table>
+
         </div>
 
     </main>
@@ -119,6 +94,8 @@
     </footer>
 
 
+    <script src="../../JS/Rides/viewRides.js"></script>
+    <script src="../../JS/Rides/deleteRide.js"></script>
 </body>
 
 </html>
