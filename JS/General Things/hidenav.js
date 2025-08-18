@@ -18,8 +18,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Si es driver, podrías ocultar "Bookings" si quisieras (opcional)
-  if (currentUser.typeuser === "driver") {
 
-  }
 });
