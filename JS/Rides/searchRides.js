@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (viaje.salida === from && viaje.llegada === to) {
             const row = document.createElement("tr");
             row.innerHTML = `
-                <th><img src="../../MainView/Images/user.png" alt="user-logo" class="user-logo"> ${user.name}</th>
+                <th><img src="../Images/user.png" alt="user-logo" class="user-logo"> ${user.name}</th>
                 <th>${viaje.salida}</th>
                 <th>${viaje.llegada}</th>
                 <th>${viaje.asientos}</th>
