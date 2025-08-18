@@ -152,7 +152,10 @@ footer {
 
 
 /* Responsive Styles */
+
+
 @media (min-width: 390px) and (max-width: 844px) {
+
     .general-container {
         margin: auto;
     }
@@ -186,6 +189,52 @@ footer {
     .sign-up {
         width: 50%;
     }
+
+    .cedula, .born-date {
+        width: 280px;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .raya {
+        display: none;
+    }
 }
 
+
+
+@media (min-width: 845px) and (max-width: 1024px) {
+
+    .individual-inputs {
+        width: 640px;
+        display: flex;
+        align-items: start;
+
+    }
+
+    .sign-up {
+        width: 50%;
+    }
+
+}
+
+
+
+@media (min-width: 1025px) {
+
+    .individual-inputs {
+        width: 645px;
+
+    }
+
+    .sign-up {
+        width: 38%;
+    }
+
+
+
+}
 
