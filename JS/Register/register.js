@@ -32,6 +32,7 @@ function storeInputs() {
       email: email,
       lastname: lastname,
       cedula: cedula,
+      bornDate: bornDate,
       phoneCode: phoneCode,
       password: password,
       typeuser: typeuser
