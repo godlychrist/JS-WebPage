@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (raya) {
         raya.style.display = "none";
     }
-    if(myridess) {
-      myridess.style.display = "none";
+    if(ridesResponsive) {
+      ridesResponsive.style.display = "none";
     }
   }
 
