@@ -1,26 +1,38 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-  if (!currentUser) return;
+  // FORMULARIO DE LOGIN
+  const loginForm = document.getElementById("form-container");
 
-  // Si es usuario normal, ocultar el menú de "Rides"
-  if (currentUser.typeuser === "user") {
-    const ridesNav = document.getElementById("myrides");
-    const ridesFooter = document.getElementById("rides");
-    const raya = document.getElementById("raya");
-    const ridesResponsive = document.getElementById("myridess");
-    if (ridesNav) {
-      ridesNav.style.display = "none";
-    }
-    if(ridesFooter) {
-        ridesFooter.style.display = "none";
-    }
-    if (raya) {
-        raya.style.display = "none";
-    }
-    if(ridesResponsive) {
-      ridesResponsive.style.display = "none";
-    }
+  if (!loginForm) {
+    console.error('No se encontró el formulario con id "form-container"');
+  } else {
+    loginForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      const users = JSON.parse(localStorage.getItem("users")) || [];
+
+      const userFound = users.find(
+        (user) => user.name === username && user.password === password
+      );
+
+      if (userFound) {
+        localStorage.setItem("currentUser", JSON.stringify(userFound));
+
+        // Redirigir según el tipo de usuario
+        window.location.href = "../../MainView/View/empty.html";
+      } else {
+        alert("Usuario o contraseña incorrectos.");
+      }
+    });
   }
 
+  // PROTECCIÓN DEL FOOTER
+  const footer = document.getElementById("footer");
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
+  if (!currentUser && footer) {
+    footer.style.display = "none";
+  }
 });
