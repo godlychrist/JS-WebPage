@@ -366,3 +366,10 @@ a:hover {
     opacity: 1;
  
 }
+
+@media (min-width: 350px) and (max-width: 844px) {
+    .general-container input {
+        display: flex;
+        flex-direction: column;
+    }
+}
