@@ -1,18 +1,15 @@
 body {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
+/* ====== NAV & LOGO ====== */
 .img-container {
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .nav-bar {
@@ -25,7 +22,6 @@ body {
     margin: 10px auto 0;
     box-sizing: border-box;
 }
-
 
 .nav-left {
     list-style-type: none;
@@ -40,7 +36,6 @@ body {
     color: black;
     padding: 12px 20px;
     display: block;
-
 }
 
 .nav-left a:hover {
@@ -54,31 +49,11 @@ body {
     gap: 15px;
 }
 
-.hover-text {
-    display: none;
-    position: absolute;
-    top: 100%;
-    /* debajo de la imagen */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
-    white-space: nowrap;
-    z-index: 10;
-}
-
-.nav-right:hover .hover-text {
-    display: block;
-}
-
 .nav-right input {
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ccc;
     outline: none;
-
 }
 
 .icono-usuario {
@@ -87,109 +62,13 @@ body {
     object-fit: contain;
 }
 
+/* ====== MAIN CONTENT ====== */
 .main-title {
-
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 52px;
-
 }
-
-.names-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 34px;
-
-}
-
-.names-container input {
-    width: 20%;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.email-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.email-container input {
-    width: 44%;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.passwords-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 34px;
-}
-
-.passwords-container input {
-    width: 20%;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.address-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.address-container input {
-    width: 44%;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-
-.country-info-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 34px;
-}
-
-.country-info-container input {
-    width: 20%;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.country-info-container select {
-    width: 22%;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.city-personal-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 34px;
-}
-
-.city-personal-info input {
-    width: 20%;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.names-container,
-.email-container,
-.passwords-container,
-.address-container,
-.country-info-container,
-.city-personal-info {
-    margin-top: -10px;
-    padding: 25px;
-}
-
 
 .border-bottom {
     border: 1px solid #ccc;
@@ -199,81 +78,87 @@ body {
     width: 15%;
 }
 
-
-.labels-names {
+.general-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 265px;
-    margin-right: 225px;
-    margin-top: 20px;
 }
 
-.labels-password {
+.flex-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 276px;
-    margin-right: 175px;
+    flex-direction: row;
+    padding: 10px;
+    gap: 40px;
 }
 
-.labels-country {
+.input-group {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 295px;
-    margin-right: 265px;
+    flex-direction: column;
 }
 
-.labels-city {
+.individual-inputs {
+    width: 43.5%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 318px;
-    margin-right: 195px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.lbl-address {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 590px;
+.first-name,
+.last-name,
+.first-password,
+.second-password,
+.city,
+.state,
+.phone-number {
+    width: 280px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
 }
 
-.lbl-email {
+.email,
+.address {
+    width: 620px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.country {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+/* ====== Buttons & Links ====== */
+.links {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 610px;
+    gap: 500px;
 }
 
 .sign-up {
     display: block;
-    /* Cambia a block para usar margin: 0 auto */
+    margin: auto;
     background-color: gray;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 30px;
     text-decoration: none;
-    width: 15%;
+    width: 10%;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
 }
 
+.cancel {
+    margin-top: 30px;
+}
 label {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.links {
-    display: flex;
-    align-items: center;
-    gap: 410px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 80px;
-    margin-left: 412px;
-
-}
-
-
+/* ====== FOOTER ====== */
 footer {
     margin-top: 80px;
     display: flex;
@@ -291,7 +176,7 @@ footer {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    gap: 20px;    
+    gap: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ccc;
 }
@@ -312,10 +197,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.home {
-    background-color: aqua;
-}
-
+/* ====== USER MENU (avatar hover) ====== */
 .test {
     visibility: hidden;
     opacity: 0;
@@ -327,7 +209,6 @@ footer {
     transition: opacity 0.2s ease;
     width: 100px;
     z-index: 100;
-
 }
 
 .test table {
@@ -346,30 +227,155 @@ footer {
     border: 1px solid black;
 }
 
-
 .test a {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
-    color: purple;
-}
-
 .img-hover {
-  position: relative; 
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .img-hover:hover .test {
     visibility: visible;
     opacity: 1;
- 
 }
 
-@media (min-width: 350px) and (max-width: 844px) {
-    .general-container input {
+.navigation {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    display: none;
+    /* Oculto por defecto */
+}
+
+.responsive-nav {
+    position: absolute;
+    width: 100%;
+    display: none;
+    /* Oculto por defecto */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.responsive-nav.active {
+    display: flex;
+}
+
+.hide {
+    display: none !important;
+}
+
+.responsive-nav li {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.responsive-nav ul {
+    width: 100%;
+}
+
+
+/* ====== RESPONSIVE STYLES ====== */
+@media (min-width: 390px) and (max-width: 844px) {
+    .footer-content {
         display: flex;
+        align-items: center;
         flex-direction: column;
+    }
+
+    .raya {
+        display: none;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+
+    .general-container {
+        margin: auto;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .individual-inputs {
+        width: 100%;
+        align-items: center;
+    }
+
+    .first-name,
+    .last-name,
+    .first-password,
+    .second-password,
+    .city,
+    .state,
+    .phone-number,
+    .country,
+    .email,
+    .address {
+        width: 280px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sign-up {
+        width: 50%;
+        margin-top: -450px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .raya {
+        display: none;
+    }
+}
+
+@media (min-width: 845px) and (max-width: 1024px) {
+    .individual-inputs {
+        width: 640px;
+    }
+
+    .sign-up {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .individual-inputs {
+        width: 645px;
+    }
+
+    .sign-up {
+        width: 38%;
     }
 }

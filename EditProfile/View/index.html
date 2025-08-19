@@ -9,12 +9,26 @@
 </head>
 
 <body>
-
     <main class="main">
-        <!-- NavBar -->
+        <!-- Logo -->
         <div class="img-container">
             <img src="../Images/logo.png" alt="Logo" class="imglogo">
         </div>
+
+                <p class="navigation"> Click Here to Display a Nav-Bar</p>
+
+        <nav class="responsive-nav">
+            <ul>
+                <li><a href="../../MainView/View/empty.html">Home</a></li>
+                <li><a href="../../Bookings/View/index.html">Bookings</a></li>
+                <li><a href="../../EditProfile/View/index.html">Profile</a></li>
+                <li><a href="../../Configuration/View/index.html">Settings</a></li>
+                <li><a href="../../index.html">Logout</a></li>
+                <li><a href="../../MyRides/View/index.html" id="myridess">Rides</a></li>
+            </ul>
+        </nav>
+
+        <!-- NavBar -->
         <nav class="nav-bar">
             <ul class="nav-left">
                 <li><a href="../../MainView/View/empty.html" class="home">Home</a></li>
@@ -23,7 +37,6 @@
             </ul>
             <div class="nav-right">
                 <input type="text" placeholder="Search...">
-                <!-- Table Setting on Avatar -->
                 <div class="img-hover">
                     <img src="../Images/user.png" alt="user" class="icono-usuario">
                     <div class="test">
@@ -43,89 +56,99 @@
             </div>
         </nav>
 
-        <p class="main-title"> Edit Profile </p>
+        <!-- Title -->
+        <p class="main-title">Edit Profile</p>
         <div class="border-bottom"></div>
-        <!-- Form for User Info -->
+
+        <!-- Form -->
         <form class="general-container">
-            <div class="labels-names">
-                <label for="first-name" class="lbl-first-name">First Name</label>
-                <label for="last-name" class="lbl-last-name">Last Name</label>
+            <!-- Name -->
+            <div class="flex-container">
+                <div class="input-group">
+                    <label for="first-name" class="lbl-first-name">First Name</label>
+                    <input type="text" id="first-name" class="first-name" />
+                </div>
+                <div class="input-group">
+                    <label for="last-name" class="lbl-last-name">Last Name</label>
+                    <input type="text" id="last-name" class="last-name" />
+                </div>
             </div>
 
-            <div class="names-container">
-                <input type="text" id="first-name" class="first-name">
-                <input type="text" id="last-name" class="last-name">
+            <!-- Email -->
+            <div class="individual-inputs">
+                <label for="email" class="lbl-email">Email</label>
+                <input type="text" id="email" class="email" />
             </div>
 
-            <label for="email" class="lbl-email">Email</label>
-            <div class="email-container">
-                <input type="text" id="email" class="email">
+            <!-- Password -->
+            <div class="flex-container">
+                <div class="input-group">
+                    <label for="first-password" class="lbl-first-password">Password</label>
+                    <input type="password" id="first-password" class="first-password" />
+                </div>
+                <div class="input-group">
+                    <label for="second-password" class="lbl-second-password">Repeat Password</label>
+                    <input type="password" id="second-password" class="second-password" />
+                </div>
             </div>
 
-            <div class="labels-password">
-                <label for="first-password" class="lbl-first-password">Password</label>
-                <label for="second-password" class="lbl-second-password">Repeat Password</label>
+            <!-- Address -->
+            <div class="individual-inputs">
+                <label for="address" class="lbl-address">Address</label>
+                <input type="text" id="address" class="address" />
             </div>
 
-            <div class="passwords-container">
-                <input type="password" id="first-password" class="first-password">
-                <input type="password" id="second-password" class="second-password">
+            <!-- Country & State -->
+            <div class="flex-container">
+                <div class="input-group">
+                    <label for="country" class="lbl-country">Country</label>
+                    <select id="country" class="country"></select>
+                </div>
+                <div class="input-group">
+                    <label for="state" class="lbl-state">State</label>
+                    <input type="text" id="state" class="state" />
+                </div>
             </div>
 
-            <label for="address" class="lbl-address">Address</label>
-            <div class="address-container">
-                <input type="text" id="address" class="address">
+            <!-- City & Phone -->
+            <div class="flex-container">
+                <div class="input-group">
+                    <label for="city" class="lbl-city">City</label>
+                    <input type="text" id="city" class="city" />
+                </div>
+                <div class="input-group">
+                    <label for="phone-number" class="lbl-phone">Phone Number</label>
+                    <input type="number" id="phone-number" class="phone-number" />
+                </div>
             </div>
 
-            <div class="labels-country">
-                <label for="country" class="lbl-country">Country</label>
-                <label for="state" class="lbl-state">State</label>
-            </div>
-
-            <div class="country-info-container">
-                <select id="country" class="country"></select>
-                <input type="text" id="state" class="state">
-            </div>
-
-            <div class="labels-city">
-                <label for="city" class="lbl-city">City</label>
-                <label for="phone-number" class="lbl-phone">Phone Number</label>
-            </div>
-
-            <div class="city-personal-info">
-                <input type="text" id="city" class="city">
-                <input type="number" id="phone-number" class="phone-number">
-            </div>
-
+            <!-- Links -->
             <div class="links">
-                <a href="#">Cancel</a>
+                <a href="#" class="cancel">Cancel</a>
                 <a href="../../MainView/View/empty.html" class="sign-up">Save</a>
             </div>
         </form>
-
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-top"></div>
         <div class="footer-content">
-            <a href="../../MainView/View/empty.html">Home</a> |
-            <a href="../../MyRides/View/index.html" id="rides">Rides</a> <span id="raya">|</span>
-            <a href="../../Bookings/View/index.html">Bookings</a> |
-            <a href="../../Configuration/View/index.html">Settings</a> |
-            <a href="../../index.html">Login</a> |
-            <a href="../../SignIn/View/index.html">Register</a>
+            <a href="../../MainView/View/empty.html">Home</a> <span class="raya">|</span>
+            <a href="../../MyRides/View/index.html" id="rides">Rides</a> <span class="raya">|</span>
+            <a href="../../Bookings/View/index.html">Bookings</a> <span class="raya">|</span>
+            <a href="../../Configuration/View/index.html">Settings</a> <span class="raya">|</span>
+            <a href="../../index.html">Login</a> <span class="raya">|</span>
+            <a href="../../SignIn/View/index.html">Register</a> <span class="raya">|</span>
         </div>
         <div class="footer-bottom">
             <span>© Aventones.com</span>
         </div>
-
-
     </footer>
 
+    <script src="../../JS/General Things/responsivenav.js"></script>
     <script src="../../JS/General Things/editprofile.js"></script>
     <script src="../../JS/General Things/hidenav.js"></script>
-
-
 </body>
 
 </html>
