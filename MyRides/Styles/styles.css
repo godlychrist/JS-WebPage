@@ -46,14 +46,15 @@ a:hover {
 }
 
 .img-hover {
-  position: relative; /* Necesario para posicionar .test relativo a este contenedor */
-  display: inline-block;
+    position: relative;
+    /* Necesario para posicionar .test relativo a este contenedor */
+    display: inline-block;
 }
 
 .img-hover:hover .test {
     visibility: visible;
     opacity: 1;
- 
+
 }
 
 .img-container {
@@ -122,7 +123,7 @@ a:hover {
     align-items: center;
     flex-direction: column;
     margin-top: 40px;
-    
+
 }
 
 .table-container table {
@@ -202,7 +203,7 @@ footer {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    gap: 20px;    
+    gap: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ccc;
 }
@@ -223,7 +224,104 @@ footer {
     margin-bottom: 20px;
 }
 
+
+
 .ride {
     background-color: aqua;
 }
 
+.navigation {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    display: none;
+    /* Oculto por defecto */
+}
+
+.responsive-nav {
+    position: absolute;
+    width: 100%;
+    display: none;
+    /* Oculto por defecto */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.responsive-nav.active {
+    display: flex;
+}
+
+.hide {
+    display: none !important;
+}
+
+.responsive-nav li {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.responsive-nav ul {
+    width: 100%;
+}
+
+@media (min-width: 350px) and (max-width: 844px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .raya {
+        display: none;
+    }
+
+    .new-ride {
+        margin: auto;
+        margin-top: 40px;
+        padding: 10px 60px;
+    }
+
+    .new-ride a {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 845px) and (max-width: 1024px) {
+    .new-ride {
+        margin: auto;
+        margin-top: 40px;
+        margin-right: 100px;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .new-ride {
+        margin: auto;
+        margin-top: 40px;
+        margin-right: 190px;
+
+    }
+}

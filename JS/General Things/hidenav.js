@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const ridesNav = document.getElementById("myrides");
     const ridesFooter = document.getElementById("rides");
     const raya = document.getElementById("raya");
+    const ridesResponsive = document.getElementById("myridess");
     if (ridesNav) {
       ridesNav.style.display = "none";
     }
@@ -15,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (raya) {
         raya.style.display = "none";
+    }
+    if(myridess) {
+      myridess.style.display = "none";
     }
   }
 
