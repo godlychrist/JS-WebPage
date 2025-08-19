@@ -16,9 +16,23 @@
 
     <main class="main">
 
+
+        <nav class="responsive-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="../../MyRides/View/index.html">Rides</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+
         <div class="img-container">
             <img src="../Images/logo.png" alt="Logo" class="imglogo">
         </div>
+
+        <p class="navigation"> Click Here to Display a Nav-Bar</p>
         <nav class="nav-bar">
             <ul class="nav-left">
                 <li><a href="#" class="home">Home</a></li>
@@ -45,6 +59,7 @@
                 </div>
             </div>
         </nav>
+
 
         <p class="search-title"> Search Rides </p>
         <div class="border-bottom"></div>
@@ -136,12 +151,12 @@
     <footer>
         <div class="footer-top"></div>
         <div class="footer-content">
-            <a href="../../MainView/View/empty.html">Home</a> |
-            <a href="../../MyRides/View/index.html" id="rides">Rides </a> <span id="raya">|</span>
-            <a href="../../Bookings/View/index.html">Bookings</a> |
-            <a href="../../Configuration/View/index.html">Settings</a> |
-            <a href="../../index.html">Login</a> |
-            <a href="../../SignIn/View/index.html">Register</a>
+            <a href="../../MainView/View/empty.html">Home</a> <span class="raya">|</span>
+            <a href="../../MyRides/View/index.html" id="rides">Rides</a> <span class="raya">|</span>
+            <a href="../../Bookings/View/index.html">Bookings</a> <span class="raya">|</span>
+            <a href="../../Configuration/View/index.html">Settings</a> <span class="raya">|</span>
+            <a href="../../index.html">Login</a> <span class="raya">|</span>
+            <a href="../../SignIn/View/index.html">Register</a> <span class="raya">|</span>
         </div>
         <div class="footer-bottom">
             <span>© Aventones.com</span>
@@ -150,9 +165,12 @@
 
     </footer>
 
+
+
+    <script src="../../JS/General Things/responsivenav.js"></script>
     <script src="../../JS/Rides/searchRides.js"></script>
     <script src="../../JS/General Things/hidenav.js"></script>
-    
+
 
 
 </body>

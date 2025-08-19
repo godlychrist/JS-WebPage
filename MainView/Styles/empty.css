@@ -139,7 +139,7 @@ body {
 .table-container table,
 th,
 td {
-    border: 1px solid black;    
+    border: 1px solid black;
     border-collapse: collapse;
 
 }
@@ -189,14 +189,15 @@ a:hover {
 }
 
 .img-hover {
-  position: relative; /* Necesario para posicionar .test relativo a este contenedor */
-  display: inline-block;
+    position: relative;
+    /* Necesario para posicionar .test relativo a este contenedor */
+    display: inline-block;
 }
 
 .img-hover:hover .test {
     visibility: visible;
     opacity: 1;
- 
+
 }
 
 
@@ -250,7 +251,7 @@ footer {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    gap: 20px;    
+    gap: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ccc;
 }
@@ -297,11 +298,128 @@ iframe {
 }
 
 .user-logo {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
 
 .home {
     background-color: aqua;
+}
+
+.navigation {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    display: none;
+    /* Oculto por defecto */
+}
+
+.responsive-nav {
+    position: absolute;
+    width: 100%;
+    display: none;
+    /* Oculto por defecto */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.responsive-nav.active {
+    display: flex;
+}
+
+.hide {
+    display: none !important;
+}
+
+.responsive-nav li {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.responsive-nav ul {
+    width: 100%;
+}
+
+@media (min-width: 350px) and (max-width: 844px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        /* Mostrar el botón */
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .raya {
+        display: none;
+    }
+        .box-container {
+        width: 95%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .selects-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .ride-places,
+    .ride-destination {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .from-rides,
+    .to-rides {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ride-destination a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .checkbox-grid {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .checkbox-item {
+        width: 45%;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 845px) and (max-width: 1024px) {
+
+    .selects-container {
+        gap: 140px;
+    }
+    .days-container {
+        margin-left: 160px;
+    }
 }
